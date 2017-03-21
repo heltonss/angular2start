@@ -4,9 +4,8 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class HeroService {
-	getHeroes(): Hero[] {
-		return HEROES;
+	getHeroes(): Promise<Hero[]> {
+		return Promise.resolve(HEROES);
 	}
-
 
 }

@@ -1,14 +1,14 @@
 import { TestBed, inject } from '@angular/core/testing';
-import { SpecialSuperHeroService } from './special-super-hero.service';
+import { HeroService } from './special-super-hero.service';
 
 describe('SpecialSuperHeroService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [SpecialSuperHeroService]
+      providers: [HeroService]
     });
   });
 
-  it('should ...', inject([SpecialSuperHeroService], (service: SpecialSuperHeroService) => {
+  it('should ...', inject([HeroService], (service: HeroService) => {
     expect(service).toBeTruthy();
   }));
 });
